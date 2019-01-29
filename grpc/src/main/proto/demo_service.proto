@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "demo_service_dto.proto";
+
+option java_multiple_files = true;
+option java_package = "com.sunego.commerce.grpc.study.dto";
+option java_outer_classname = "DemosService";
+
+package com.sunego.commerce.grpc.study.service;
+
+service DemoService {
+    rpc Ping (com.sunego.commerce.grpc.study.dto.PingRequest) returns (com.sunego.commerce.grpc.study.dto.PingResponse) {}
+
+    rpc getPersonList (com.sunego.commerce.grpc.study.dto.QueryParameter) returns (com.sunego.commerce.grpc.study.dto.PersonList) {}
+}
