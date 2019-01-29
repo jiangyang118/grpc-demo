@@ -51,3 +51,8 @@ childrenCount: 2
 //server
 Server started, listening on 50051
 ```
+
+参考资料
+[gRPC 官方文档中文版](http://doc.oschina.net/grpc?t=58008)
+[grpc](https://github.com/grpc)
+
